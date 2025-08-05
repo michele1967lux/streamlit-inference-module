@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "AI Agent Inference Module",
+    "version": "1.0.0",
+    "max_users": 5,
+    "created": "2025-08-05T14:31:52.798914",
+    "last_updated": "2025-08-05T14:34:48.008488"
+  },
+  "models": {
+    "ollama": {
+      "enabled": true,
+      "base_url": "http://localhost:11434",
+      "selected_model": null,
+      "available_models": []
+    },
+    "openai": {
+      "enabled": false,
+      "api_key": "",
+      "model": "gpt-4o",
+      "base_url": "https://api.openai.com/v1"
+    },
+    "anthropic": {
+      "enabled": false,
+      "api_key": "",
+      "model": "claude-3-sonnet-20240229"
+    },
+    "gemini": {
+      "enabled": false,
+      "api_key": "",
+      "model": "gemini-pro"
+    }
+  },
+  "inference": {
+    "default_stream": true,
+    "default_temperature": 0.7,
+    "default_max_tokens": 2048,
+    "show_tool_calls": true,
+    "show_reasoning": false,
+    "cache_responses": true,
+    "save_history": true
+  },
+  "memory": {
+    "enabled": true,
+    "max_memories_per_user": 1000,
+    "auto_summarize": true,
+    "retention_days": 30
+  },
+  "knowledge": {
+    "enabled": true,
+    "max_documents": 100,
+    "chunk_size": 1000,
+    "overlap": 200
+  },
+  "ui": {
+    "theme": "professional",
+    "sidebar_expanded": true,
+    "show_advanced_options": false,
+    "auto_refresh": true
+  },
+  "system_prompts": {
+    "default": "You are a helpful AI assistant. Provide clear, accurate, and helpful responses.",
+    "creative": "You are a creative AI assistant. Think outside the box and provide innovative solutions.",
+    "analytical": "You are an analytical AI assistant. Focus on data-driven insights and logical reasoning.",
+    "custom_prompts": {}
+  },
+  "agents": {}
+}
